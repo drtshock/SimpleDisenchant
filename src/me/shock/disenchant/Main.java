@@ -70,7 +70,6 @@ public class Main extends JavaPlugin
 			this.newConfig = getConfig();
 			this.newConfig.options().copyDefaults(true);
 	
-			this.usevault = Boolean.valueOf(this.newConfig.getBoolean("usevault", false));
 			this.cost = Double.valueOf(this.newConfig.getDouble("cost"));
 			saveConfig();
 			this.log.info("[SimpleDisenchant] config loaded");
